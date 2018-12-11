@@ -15,13 +15,21 @@ export class DeckService {
     return  this.http.get<ICard[]>(this._localUrl);
 
   }
+  /* 
+    This logic should be implemented server-side:
+  */
+  shuffleDeck(array){
+      var currentIndex = array.length, temporaryValue, randomIndex;
+      while (0 !== currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+      return array;
+  }
   drawACard(){
-    /* 
-    this logic should be implemented server-side:
-    draw a card from the player's deck and remove it from selectable options
-    */
-
-
     return Math.floor(Math.random()*10 + 1);
   }
 }
