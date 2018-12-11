@@ -1,0 +1,130 @@
+
+.card {
+    width: 150px;
+    height: 225px;
+    border-radius:8px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    list-style-type: none;
+}
+
+.card-back, img {
+    width: 150px;
+    height: 225px;
+}
+
+.card .side {
+    backface-visibility: hidden;
+    border-radius: 6px;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.card:hover {
+
+    transform: translateY(-50px)
+} 
+/* .flip{
+    transform:  translateX(400px) rotateY(180deg);
+} */
+
+.card .card-back {
+
+    transform: rotateY(180deg);
+}
+.card .card-front{
+
+    background: #ffffff;
+    color: #0087cc;
+    line-height: 150px;
+    text-align: center;
+    border: solid 1px black;
+}
+
+
+/* last card */
+.last{
+    transform: translateX(400px) translateY(-400px) rotateX(-180deg);
+}
+.card-name{
+    backface-visibility: hidden;
+    width: 150px;
+    height:40px;
+    background: url("../../assets/imgs/card/title.png");
+    position: absolute;
+    top: 130px;
+}
+.card-name p{
+    line-height: 1em;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.mana{
+    backface-visibility: hidden;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    background: url("../../assets/imgs/card/mana.png");
+    background-size: cover;
+    top: -12px;
+    left: -12px;
+    
+
+}
+.mana p{
+    color: rgb(228, 228, 228);
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 0.14em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.dmg{
+    backface-visibility: hidden;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    background: url("../../assets/imgs/card/dmg.png");
+    background-size: cover;
+    bottom: -6px;
+    left: -4px;
+}
+.dmg p{
+    margin-top: 0.9em;
+    margin-left: -10px;
+    color: rgb(255, 102, 0);
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hp{
+    backface-visibility: hidden;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    background: url("../../assets/imgs/card/health.png");
+    background-size: cover;
+    bottom: -10px;
+    right: -10px;
+}
+.hp p{
+    margin-top: 0.9em;
+    
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.picture img{
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+}

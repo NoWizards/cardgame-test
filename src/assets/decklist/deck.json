@@ -1,0 +1,53 @@
+[{
+    "id": 1,
+    "name": "archer",
+    "img": "./assets/imgs/units/archer.jpg",
+    "desc": "Ancient avatar that use all known spells",
+    "mana":3,
+    "hp": 7,
+    "dmg": 7
+  },{
+    "id": 2,
+    "name": "Blood bat",
+    "img": "./assets/imgs/units/bat.jpg",
+    "desc": "Ancient avatar that use all known spells",
+    "mana":2,
+    "hp": 5,
+    "dmg": 4
+  },
+  {
+    "id": 3,
+    "name": "mad bear",
+    "img": "./assets/imgs/units/bear.jpg",
+    "desc": "Ancient avatar that use all known spells",
+    "mana":3,
+    "hp": 10,
+    "dmg": 8
+  },
+  {
+    "id": 4,
+    "name": "black dragon",
+    "img": "./assets/imgs/units/black-dragon.jpg",
+    "desc": "Ancient avatar that use all known spells",
+    "mana":4,
+    "hp": 5,
+    "dmg": 16
+  },
+  {
+    "id": 5,
+    "name": "green dragon",
+    "img": "./assets/imgs/units/green-dragon.jpg",
+    "desc": "Ancient avatar that use all known spells",
+    "mana":4,
+    "hp": 5,
+    "dmg": 12
+  },
+  {
+    "id": 6,
+    "name": "ice mage",
+    "img": "./assets/imgs/units/ice-mage.jpg",
+    "desc": "Ancient avatar that use all known spells",
+    "mana":3,
+    "hp": 5,
+    "dmg": 9
+  }]

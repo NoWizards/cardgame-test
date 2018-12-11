@@ -1,0 +1,18 @@
+<div class="card" (click)="clickedCard()">
+  <div class="side card-back"><img src="./assets/imgs/backs/pirates.png" alt=""></div>
+  <div class="side card-front">
+    <div class="mana">
+      <p>{{ cardInfo.mana }}</p>
+    </div>
+    <div class="picture"><img src="{{ cardInfo.img }}" alt=""></div>
+    <div class="card-name">
+      <p>{{ cardInfo.name | uppercase }}</p>
+    </div>
+    <div class="dmg">
+      <p>{{ cardInfo.dmg }}</p>
+    </div>
+    <div class="hp">
+      <p>{{ cardInfo.hp }}</p>
+    </div>
+  </div>
+</div>
