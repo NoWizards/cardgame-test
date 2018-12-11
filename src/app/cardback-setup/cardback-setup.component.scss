@@ -6,7 +6,7 @@
 ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     li{
         list-style-type: none;
         .card{
@@ -20,7 +20,17 @@ ul{
             }
 
 
+            .card-name{
+                font-size: 0.8rem;
+                font-weight: bold;
+            }
+
+
         }
 
     }
+}
+li:hover{
+    background-color: rgb(255, 165, 62);
+    border-radius: 10px;
 }
