@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CardBackService } from '../card-back.service';
 
 @Component({
   selector: 'app-cardback-setup',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cardback-setup.component.scss']
 })
 export class CardbackSetupComponent implements OnInit {
+  allCardbacks = [];
 
-  constructor() { }
+
+  constructor(private _cardbackService: CardBackService) { }
 
   ngOnInit() {
+    this._cardbackService.cardBackList().subscribe(data => this.allCardbacks = data);
+    console.log(this.allCardbacks)
   }
 
 }
