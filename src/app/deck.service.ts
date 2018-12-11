@@ -11,7 +11,7 @@ export class DeckService {
   private _localUrl: string ="/assets/decklist/deck.json"
 
   constructor(private http: HttpClient) { }
-  getMyDeck(): Observable<ICard[]>{
+  getMyHand(): Observable<ICard[]>{
     return  this.http.get<ICard[]>(this._localUrl);
 
   }

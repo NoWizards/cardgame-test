@@ -16,7 +16,7 @@ export class HandComponent implements OnInit {
   constructor(private _deckService: DeckService) { }
 
   ngOnInit() {
-    this._deckService.getMyDeck().subscribe(data => {this.cardList = this._deckService.shuffleDeck(data); this.total= data.length; this.degrees= -7.5*(this.total-1); });
+    this._deckService.getMyHand().subscribe(data => {this.cardList = this._deckService.shuffleDeck(data); this.total= data.length; this.degrees= -7.5*(this.total-1); });
   }
   playThisCard(id){
 
