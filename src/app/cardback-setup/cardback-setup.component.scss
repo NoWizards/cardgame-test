@@ -1,0 +1,26 @@
+.card-back{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    li{
+        list-style-type: none;
+        .card{
+            margin: 20px;
+            width: 150px;
+            height: 220px;
+
+            img{
+                width: 150px;
+                height: 220px;
+            }
+
+
+        }
+
+    }
+}

@@ -13,7 +13,6 @@ export class CardBackService {
 
   constructor(private http: HttpClient) { }
 
-  
   cardBackList(): Observable<IBack[]>{
     return  this.http.get<IBack[]>(this._localBacks);
 

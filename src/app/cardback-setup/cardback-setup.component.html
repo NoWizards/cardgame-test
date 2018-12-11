@@ -1,3 +1,11 @@
-<p>
-  cardback-setup works!
-</p>
+<div class="card-back">
+  <h2>Select a card-back for your deck</h2>
+
+  <ul >
+      <li *ngFor="let cardBack of allCardBacks"><div class="card">
+        <div class="card-img"><img src="{{cardBack.url}}" alt=""></div>
+        <div class="card-name">{{cardBack.name | uppercase}}</div>
+      </div></li>
+  </ul>
+
+</div>
