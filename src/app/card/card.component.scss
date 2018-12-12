@@ -7,6 +7,7 @@
     transition: all 0.5s ease-in-out;
     position: absolute;
     list-style-type: none;
+    backface-visibility: hidden;
 }
 
 .card-back, img {

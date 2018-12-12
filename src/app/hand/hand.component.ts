@@ -13,6 +13,7 @@ export class HandComponent implements OnInit {
   cardList=[];
   total = 0;
   degrees = 0;
+  array = [];
   constructor(private _deckService: DeckService) { }
 
   ngOnInit() {
@@ -22,8 +23,10 @@ export class HandComponent implements OnInit {
 
     console.log(`we will remove this card:  ${id}`)
   }
+
   drawCard(){
     console.log(`will draw this card: ${this._deckService.drawACard()}`);
+    
   }
 
 }
