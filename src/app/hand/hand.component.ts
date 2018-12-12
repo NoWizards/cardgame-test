@@ -4,6 +4,7 @@ import { GameStatusService } from "../game-status.service";
 
 
 
+
 @Component({
   selector: 'player-hand',
   templateUrl: './hand.component.html',
@@ -11,14 +12,14 @@ import { GameStatusService } from "../game-status.service";
 })
 export class HandComponent implements OnInit {
 
-  cardList=[];
+  cardList={};
   total = 0;
   degrees = 0;
   array = [];
   constructor(private _deckService: DeckService, private _gameStatusService: GameStatusService ) { }
 
   ngOnInit() {
-    this._gameStatusService.handSubject.subscribe(data =>{this.cardList = data; this.total= data.length; this.degrees= -7.5*(this.total-1); });
+    this._gameStatusService.handSubject.subscribe(data =>{this.cardList = data; this.total=Object.keys(data).length; this.degrees= -7.5*(this.total-1); });
 
   }
   playThisCard(id){
