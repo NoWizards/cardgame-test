@@ -1,9 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    Lets play some {{ title }}!
-  </h1>
-<player-hand></player-hand>
+<div class="game">
+  <div class="b-field">
+    <battlefield></battlefield>
+  </div>
+  <div class="player1">
+    <player-hand></player-hand>
+  </div>
+</div>
 <cardback-setup></cardback-setup>
 
 <router-outlet></router-outlet>
+</div>

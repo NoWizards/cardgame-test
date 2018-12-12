@@ -8,6 +8,7 @@ import { HandComponent } from './hand/hand.component';
 import { CardComponent } from './card/card.component';
 import { DeckService } from './deck.service';
 import { CardbackSetupComponent } from './cardback-setup/cardback-setup.component';
+import { BattlefieldComponent } from './battlefield/battlefield.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CardbackSetupComponent } from './cardback-setup/cardback-setup.componen
     AppComponent,
     HandComponent,
     CardComponent,
-    CardbackSetupComponent
+    CardbackSetupComponent,
+    BattlefieldComponent
   ],
   imports: [
     BrowserModule,
