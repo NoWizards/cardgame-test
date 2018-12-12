@@ -1,0 +1,4 @@
+<p style="position: absolute; left: -450px; top: -75px;" *ngIf="!playerTurn$.isP1">Wait until enemy makes his move... (2-4 secs)</p>
+<div class="btn" [class]="playerTurn$.isP1?'my-turn':'enemy-turn'" (click)="changeTurn()">
+  <p>{{ playerTurn$.msg | uppercase}}</p>
+</div>

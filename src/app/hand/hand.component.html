@@ -2,7 +2,7 @@
 <div class="list">
     <div class="cards" [style.width.px]="total">
       <ng-container *ngFor="let card of cardList; index as i; last as l">
-        <player-card [style.transform]="l?'':'rotate(' +  (i*15+degrees) + 'deg)'" [class.last]="l" class="card" (useCard)="playThisCard($event)" [cardInfo]="card"></player-card>
+        <player-card [style.transform]="'rotate(' +  (i*15+degrees) + 'deg)'"  class="card" (useCard)="playThisCard($event)" [cardInfo]="card"></player-card>
       </ng-container>
     </div>
 </div>
