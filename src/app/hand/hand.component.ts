@@ -24,7 +24,7 @@ export class HandComponent implements OnInit {
   }
   playThisCard(id){
     this._gameStatusService.playCard(id);
-    console.log(`we will remove this card:  id:${id} -  as is being player by user`)
+    console.log(`we will remove this card:  id:${id} -  as is being played by user`)
   }
 
   drawCard(){
