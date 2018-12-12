@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DeckService } from '../deck.service';
+import { GameStatusService } from "../game-status.service";
 
 
 
@@ -14,17 +15,19 @@ export class HandComponent implements OnInit {
   total = 0;
   degrees = 0;
   array = [];
-  constructor(private _deckService: DeckService) { }
+  constructor(private _deckService: DeckService, private _gameStatusService: GameStatusService ) { }
 
   ngOnInit() {
-    this._deckService.getMyHand().subscribe(data => {this.cardList = this._deckService.shuffleDeck(data); this.total= data.length; this.degrees= -7.5*(this.total-1); });
+    this._gameStatusService.handSubject.subscribe(data =>{this.cardList = data; this.total= data.length; this.degrees= -7.5*(this.total-1); });
+
   }
   playThisCard(id){
-
-    console.log(`we will remove this card:  ${id}`)
+    this._gameStatusService.playCard(id);
+    console.log(`we will remove this card:  id:${id} -  as is being player by user`)
   }
 
   drawCard(){
+    
     console.log(`will draw this card: ${this._deckService.drawACard()}`);
     
   }
